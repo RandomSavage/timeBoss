@@ -1,7 +1,10 @@
 @import url('./reset.scss');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,700&display=swap');
+
 #container{
   width: 100%;
   height: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 body {
   background: #1b1b1b;
@@ -25,6 +28,8 @@ header {
     .leftHud{
       h2{
         color: rgba(255, 255, 255, .7);
+        color: rgba(255, 255, 255, .7);
+        color: cyan;
         margin: 0;
       }
      }
@@ -34,6 +39,8 @@ header {
           flex-direction: column;
           a{
             color: rgba(255, 255, 255, .7);
+            color: cyan;
+
           }
         }
         h2{
@@ -90,6 +97,7 @@ header {
     .right{
       height: 55vh;
       width: 20vw;
+      border: 4px solid;
       transform: skew(0deg, 2deg);
       // border: 10px solid #fff;
       position: absolute;
@@ -99,6 +107,61 @@ header {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+    }
+  }
+  #threeCheese{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    position: relative;
+    .left-cheese{
+      height: 50%;
+      width: 50%;
+      border: 4px solid;
+      border-color: cyan;
+      background:rgba(255, 255, 255, .7);
+      background: url('../../public/images/spaceIce.jpg');
+      background-size: contain;
+      transform-origin: top right;
+      transform: skew(45deg);
+      z-index: 15;
+      position: absolute;
+      top: 50%;
+      left: -353px;
+    }
+    .middle-cheese{
+      height: 100vh;
+      width: 100vw;
+      background:rgba(255, 255, 255, .7);
+      background: url('../../public/images/iceMaker.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      h1{
+        font-size: 4vw;
+        color: fuchsia;
+        position: absolute;
+        top: 20%;
+        left: 150px;
+      }
+    }
+    .right-cheese{
+      height: 50%;
+      width: 50%;
+      border: 4px solid;
+      border-color: cyan;
+      background:rgba(255, 255, 255, .7);
+      background: url('../../public/images/spaceIce.jpg');
+      background-size: contain;
+      background-repeat: repeat;
+      transform-origin: top left;
+      transform: skew(-45deg);
+      z-index: 15;
+      position: absolute;
+      top: 50%;
+      right: -353px;
     }
   }
 }
