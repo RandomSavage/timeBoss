@@ -4,10 +4,13 @@
   width: 100%;
   height: 100%;
   font-family: "Roboto", sans-serif;
+  margin: 0 auto;
 }
 
 body {
   background: #1b1b1b;
+  overflow-x: hidden;
+  margin: 0 auto;
 }
 
 header {
@@ -48,6 +51,7 @@ header #headerHud .rightHud h2 {
 #landing_dock {
   height: 100vh;
   width: 100%;
+  margin: 0 auto;
 }
 #landing_dock #landing {
   height: 80%;
@@ -152,4 +156,39 @@ header #headerHud .rightHud h2 {
   position: absolute;
   top: 50%;
   right: -353px;
+}
+
+#off-grid {
+  height: 100vh;
+  width: 100vw;
+  margin: 50px auto;
+  background: deeppink;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "header header header header" "main main . sidebar" "footer footer footer footer";
+}
+#off-grid .top-grid {
+  grid-area: header;
+  margin: 25px auto;
+  background: cadetblue;
+  width: 100%;
+}
+#off-grid .main-grid {
+  grid-area: main;
+  margin: 25px auto;
+  background: cadetblue;
+  width: 100%;
+}
+#off-grid .side-bar {
+  grid-area: sidebar;
+  margin: 25px auto;
+  width: 100%;
+  background: cadetblue;
+}
+#off-grid .feet-grid {
+  grid-area: footer;
+  margin: 25px auto;
+  background: cadetblue;
+  width: 100%;
 }
