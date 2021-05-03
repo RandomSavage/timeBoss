@@ -24,7 +24,7 @@ header {
   background: #1b1b1b;
   border-bottom: 10px solid cyan;
   opacity: 0.4;
-  margin: 0 0 40px;
+  margin: 0 0 100px;
   transform: skew(25deg);
 }
 header #headerHud {
@@ -41,6 +41,16 @@ header #headerHud .leftHud h2 {
   color: cyan;
   margin: 0;
 }
+header #headerHud .alien {
+  margin: auto;
+}
+header #headerHud .alien button {
+  cursor: pointer;
+  background: cyan;
+}
+header #headerHud .alien button:hover {
+  background: deepskyblue;
+}
 header #headerHud .rightHud nav {
   display: flex;
   flex-direction: column;
@@ -56,7 +66,7 @@ header #headerHud .rightHud h2 {
 #landing_dock {
   height: 100vh;
   width: 100%;
-  margin: 0 auto;
+  margin: 100px auto;
 }
 #landing_dock #landing {
   height: 80%;
@@ -64,7 +74,7 @@ header #headerHud .rightHud h2 {
   display: flex;
   flex-direction: row;
   justify-content: start;
-  margin: 25px 50px 50px 100px;
+  margin: 100px 50px 50px 100px;
   padding-bottom: 50px;
   position: relative;
 }
