@@ -29,7 +29,7 @@ header {
   transform: skew(25deg);
 }
 header #headerHud {
-  height: 10vh;
+  height: 15vh;
   width: 90%;
   background: rgba(255, 255, 255, 0.2);
   margin: 50px auto;
@@ -245,6 +245,8 @@ header #headerHud .rightHud h2 {
 }
 
 #pokemon {
+  margin-top: 100px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -254,6 +256,7 @@ header #headerHud .rightHud h2 {
   height: 65vh;
   background: orangered;
   border: 10px solid yellow;
+  border-radius: 5px;
 }
 #pokemon .card-header {
   display: flex;
