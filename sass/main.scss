@@ -4,6 +4,7 @@
 
 html{
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 #container{
   width: 100%;
@@ -262,34 +263,48 @@ header {
   flex-direction: row;
   justify-content: space-around;
   .card{
-    width: 20vw;
-    height: 60vh;
+    width: 24vw;
+    height: 65vh;
     background: cornsilk;
     border: 10px solid yellow;
   }
-  .left-card{
-
-    .card-header{
-      .left-header{
-        h2{
-
-        }
-      }
-      .right-header{
-        p{
-
-        }
-        h2{
-
-        }
-        .energy{
-
-        }
+  .card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .left-header{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      h2{
+        font-size: 18px;
       }
     }
+    .right-header{
+      display: flex;
+      flex-direction: row;
+      justify-content: baseline;
+      align-items: baseline;
+      p{
+        font-size: 12px;
+      }
+      h2{
+        font-weight: 300;
+    }
+  }
+}
+.energy{
+  margin-left: 5px;
+  background: rgb(38, 0, 255);
+  border-radius: 100%;
+  padding: 4px;
+}
+  .left-card{
+
     .card-hero{
       .stage{
-
+        font-size: 14px;
       }
       .emblem{
 
@@ -304,6 +319,66 @@ header {
           span{
 
           }
+        }
+      }
+    }
+  }
+  .card-hero{
+    position: relative;
+    width: 90%;
+    height: 45%;
+    margin: -19px auto;
+    border: 4px solid grey;
+    border-bottom: 2px solid grey;
+    background: url('../../public/images/incineroar_by_emsheshan-dazmzl7.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    #card-id{
+      position: absolute;
+      top: -28px;
+      left: -25px;
+      z-index: 50;
+
+      .stage{
+        font-size: 12px;
+        font-weight: 700px;
+        background:grey;
+        border-radius: 2px;
+        span{
+        font-size: 15px;
+        font-weight: 700px;
+        }
+      }
+      .emblem{
+        text-align: center;
+      }
+    }
+    .evolves{
+    width: 50%;
+    background: rgb(233, 233, 233);
+    transform: skew(-10deg);
+    position: absolute;
+    top: -1px;
+    left: 5px;
+    span{
+      font-size: 9px;
+    }
+    }
+    .identification{
+      width: 100%;
+      background: rgb(233, 233, 233);
+      border: 4px solid grey;
+      border-top: 2px solid grey;
+      border-radius: 0px 0px 5px 5px;
+      position: absolute;
+      top: 185px;
+      left: -4px;
+      text-align: center;
+      p{
+        margin: 0 auto;
+        span{
+          font-size: 8px;
         }
       }
     }
