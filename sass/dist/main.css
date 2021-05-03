@@ -178,7 +178,10 @@ header #headerHud .rightHud h2 {
   height: 100vh;
   width: 100vw;
   margin: 50px auto;
-  background: deeppink;
+  background-image: url(../../public/images/house_plant.png);
+  background-position: top;
+  background-size: contain;
+  background-repeat: repeat;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
@@ -187,24 +190,44 @@ header #headerHud .rightHud h2 {
 #off-grid .top-grid {
   grid-area: header;
   margin: 25px auto;
-  background: cadetblue;
+  background: rgba(95, 158, 160, 0.7);
   width: 100%;
+  background-image: url(../../public/images/starfield.jpg);
+  background-position: top;
+  background-size: contain;
+  background-repeat: repeat;
+  opacity: 0.5;
 }
 #off-grid .main-grid {
   grid-area: main;
   margin: 25px auto;
-  background: cadetblue;
+  background: rgba(95, 158, 160, 0.7);
   width: 100%;
+  background-image: url(../../public/images/starfield.jpg);
+  background-position: top;
+  background-size: contain;
+  background-repeat: repeat;
+  opacity: 0.5;
 }
 #off-grid .side-bar {
   grid-area: sidebar;
   margin: 25px auto;
   width: 100%;
-  background: cadetblue;
+  background: rgba(95, 158, 160, 0.7);
+  background-image: url(../../public/images/starfield.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
 }
 #off-grid .feet-grid {
   grid-area: footer;
   margin: 25px auto;
-  background: cadetblue;
+  background: rgba(95, 158, 160, 0.7);
   width: 100%;
+  background-image: url(../../public/images/starfield.jpg);
+  background-position: top;
+  background-size: contain;
+  background-repeat: repeat;
+  opacity: 0.5;
 }
