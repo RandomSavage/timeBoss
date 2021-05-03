@@ -242,3 +242,15 @@ header #headerHud .rightHud h2 {
   background-repeat: repeat;
   opacity: 0.5;
 }
+
+#pokemon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#pokemon .card {
+  width: 20vw;
+  height: 60vh;
+  background: cornsilk;
+  border: 10px solid yellow;
+}

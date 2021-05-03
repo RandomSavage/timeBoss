@@ -257,3 +257,55 @@ header {
     opacity: .5;
   }
 }
+#pokemon{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  .card{
+    width: 20vw;
+    height: 60vh;
+    background: cornsilk;
+    border: 10px solid yellow;
+  }
+  .left-card{
+
+    .card-header{
+      .left-header{
+        h2{
+
+        }
+      }
+      .right-header{
+        p{
+
+        }
+        h2{
+
+        }
+        .energy{
+
+        }
+      }
+    }
+    .card-hero{
+      .stage{
+
+      }
+      .emblem{
+
+      }
+      .evolves{
+        span{
+
+        }
+      }
+      .identification{
+        p{
+          span{
+
+          }
+        }
+      }
+    }
+  }
+}
