@@ -183,16 +183,16 @@ header #headerHud .rightHud h2 {
   background-size: contain;
   background-repeat: repeat;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "header header header header" "main main . sidebar" "footer footer footer footer";
+  grid-template-areas: "header header header header header" "main . clones . sidebar" "footer footer footer footer footer";
 }
 #off-grid .top-grid {
   grid-area: header;
   margin: 25px auto;
   background: rgba(95, 158, 160, 0.7);
   width: 100%;
-  background-image: url(../../public/images/starfield.jpg);
+  background-image: url("../../public/images/starfield.jpg");
   background-position: top;
   background-size: contain;
   background-repeat: repeat;
@@ -203,7 +203,18 @@ header #headerHud .rightHud h2 {
   margin: 25px auto;
   background: rgba(95, 158, 160, 0.7);
   width: 100%;
-  background-image: url(../../public/images/starfield.jpg);
+  background-image: url("../../public/images/starfield.jpg");
+  background-position: top;
+  background-size: contain;
+  background-repeat: repeat;
+  opacity: 0.5;
+}
+#off-grid .clone-grid {
+  grid-area: clones;
+  margin: 25px auto;
+  background: rgba(95, 158, 160, 0.7);
+  width: 100%;
+  background-image: url("../../public/images/starfield.jpg");
   background-position: top;
   background-size: contain;
   background-repeat: repeat;
@@ -214,7 +225,7 @@ header #headerHud .rightHud h2 {
   margin: 25px auto;
   width: 100%;
   background: rgba(95, 158, 160, 0.7);
-  background-image: url(../../public/images/starfield.jpg);
+  background-image: url("../../public/images/starfield.jpg");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -225,7 +236,7 @@ header #headerHud .rightHud h2 {
   margin: 25px auto;
   background: rgba(95, 158, 160, 0.7);
   width: 100%;
-  background-image: url(../../public/images/starfield.jpg);
+  background-image: url("../../public/images/starfield.jpg");
   background-position: top;
   background-size: contain;
   background-repeat: repeat;
