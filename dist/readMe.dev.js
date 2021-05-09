@@ -1,6 +1,9 @@
 "use strict";
 
-var readline = require('readline');
+var readline = require('readline'); // const AbortController = require('abort-controller')
+
+
+var AbortController = require("abort-controller");
 
 var rl = readline.createInterface({
   input: process.stdin,

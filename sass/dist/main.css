@@ -354,3 +354,9 @@ header #headerHud .rightHud h2 {
 #pokemon .card-hero .identification p span {
   font-size: 8px;
 }
+#pokemon .attax {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

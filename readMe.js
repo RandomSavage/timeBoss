@@ -1,4 +1,6 @@
 const readline = require('readline')
+// const AbortController = require('abort-controller')
+const AbortController = require("abort-controller")
 const rl = readline.createInterface({input: process.stdin, output: process.stdout})
 let ac = new AbortController()
 const signal = ac.signal
