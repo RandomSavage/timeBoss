@@ -266,10 +266,50 @@ header {
   justify-content: space-around;
   .card{
     width: 24vw;
-    height: 65vh;
+    height: 75vh;
     background: orangered;
     border: 10px solid yellow;
     border-radius: 5px;
+    .attax{
+      margin-top: 55px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .left-attax{
+        .emblems{
+          .fire{
+  
+          }
+          .title{
+  
+          }
+        }
+      }
+    }
+    #attax-area{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      .attax{
+        margin-top: 55px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .low-attax{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        }
+        .attax-description{
+          p{
+            font-size: 13px;
+            font-weight: 700px;
+            padding-left: 8px;
+          }
+        }
+    }
   }
   .card-header{
     display: flex;
@@ -384,22 +424,6 @@ header {
         margin: 0 auto;
         span{
           font-size: 8px;
-        }
-      }
-    }
-  }
-  .attax{
-    margin-top: 55px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    .left-attax{
-      .emblems{
-        .fire{
-
-        }
-        .title{
-
         }
       }
     }

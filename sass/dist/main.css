@@ -253,10 +253,38 @@ header #headerHud .rightHud h2 {
 }
 #pokemon .card {
   width: 24vw;
-  height: 65vh;
+  height: 75vh;
   background: orangered;
   border: 10px solid yellow;
   border-radius: 5px;
+}
+#pokemon .card .attax {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#pokemon .card #attax-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#pokemon .card #attax-area .attax {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#pokemon .card #attax-area .low-attax {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#pokemon .card #attax-area .attax-description p {
+  font-size: 13px;
+  font-weight: 700px;
+  padding-left: 8px;
 }
 #pokemon .card-header {
   display: flex;
@@ -353,10 +381,4 @@ header #headerHud .rightHud h2 {
 }
 #pokemon .card-hero .identification p span {
   font-size: 8px;
-}
-#pokemon .attax {
-  margin-top: 55px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
