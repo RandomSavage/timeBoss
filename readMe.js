@@ -14,14 +14,14 @@ rl.question(`What is ${num1} + ${num2} \n`, { signal }, (answer) => {
     rl.close()
   } else {
     console.log('Do it again')
+    answer = ""
   }
-  rl.close()
 })
 
 signal.addEventListener('abort', () => {
   console.log(`You too slow, man \n`)
   rl.question(`You there? \n `, (answer)=> {
-    if(answer.trim() === !undefined || answer.trim() === "") {
+    if(answer.trim() === "") {
       console.log('!Bizzz')
       setTimeout(() => rl.close(), 2000)
     } else {

@@ -21,14 +21,13 @@ rl.question("What is ".concat(num1, " + ").concat(num2, " \n"), {
     rl.close();
   } else {
     console.log('Do it again');
+    answer = "";
   }
-
-  rl.close();
 });
 signal.addEventListener('abort', function () {
   console.log("You too slow, man \n");
   rl.question("You there? \n ", function (answer) {
-    if (answer.trim() === !undefined || answer.trim() === "") {
+    if (answer.trim() === "") {
       console.log('!Bizzz');
       setTimeout(function () {
         return rl.close();
