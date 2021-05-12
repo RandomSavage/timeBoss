@@ -1,0 +1,19 @@
+{
+  "name": "timeboss",
+  "version": "1.0.0",
+  "description": "action/adventure",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RandomSavage/timeBoss.git"
+  },
+  "author": "RandomSavage",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RandomSavage/timeBoss/issues"
+  },
+  "homepage": "https://github.com/RandomSavage/timeBoss#readme"
+}
