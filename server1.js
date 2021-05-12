@@ -8,7 +8,7 @@ const port = '5500'
 const server = http.createServer((req, res) => {
   res.statusCode = 200
   res.setHeader('Content-Type', 'text/plain')
-  res.end(endGame()," hello world")
+  res.end(endGame())
 })
 
 server.listen(port, hostname, () => {

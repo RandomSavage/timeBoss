@@ -99,3 +99,7 @@ fs.readdir('example', function (err, files) {
     }
   }
 });
+var readStream = fs.createReadStream('./largefile.txt', 'utf8');
+readStream.on('data', function (chunk) {
+  console.log(chunk);
+});
