@@ -98,7 +98,8 @@ fs.readdir('example', function (err, files) {
       }
     }
   }
-});
+}); //set the encoding type or you will just see buffer chunks
+
 var readStream = fs.createReadStream('./largefile.txt', 'utf8');
 readStream.on('data', function (chunk) {
   console.log(chunk);

@@ -75,6 +75,7 @@ fs.readdir('example', (err, files) => {
   }
 })
 
+//set the encoding type or you will just see buffer chunks
 const readStream = fs.createReadStream('./largefile.txt', 'utf8')
 readStream.on('data', (chunk) => {
   console.log(chunk)

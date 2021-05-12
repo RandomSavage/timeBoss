@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/RandomSavage/timeBoss/issues"
   },
-  "homepage": "https://github.com/RandomSavage/timeBoss#readme"
+  "homepage": "https://github.com/RandomSavage/timeBoss#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
