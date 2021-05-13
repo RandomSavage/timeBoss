@@ -1,5 +1,6 @@
 const express = require('express')
 const path = require('path')
+const Joi = require('joi')
 const app = express()
 
 //middleware (alias, middleware function)
@@ -28,11 +29,14 @@ app.get('/example/:name/:age', (req, res) => {
   res.send(`${req.params.name} : ${req.params.age}`)
 })
 
-app.post('/', (req, res) => {
+app.post('/', async (req, res) => {
   console.log('Hit Submission Validation page')
   console.log(req.body)
-  //databse work here
-  res.send('successfully posted data')
+  const schema = Joi.object().keys({
+    email: Joi.string().trim().email().required(),
+    password: Joi.string().min(5).max(10).required()
+  })
+  await schema.validateAsync(req.body);
 })
 
 app.listen(3000)
@@ -42,3 +46,23 @@ app.listen(3000)
 
 //   localhost:3000/example/name/age?group=
 // furries&style=wild
+
+
+//tutorial way no longer works
+// app.post('/', (req, res) => {
+//   console.log('Hit Submission Validation page')
+//   console.log(req.body)
+//   const schema = Joi.object().keys({
+//     email: Joi.string().trim().email().required(),
+//     password: Joi.string().min(5).max(10).required()
+//   })
+//   schema.validate(req.body, schema, (err, result) => {
+//     if(err) {
+//       console.log(req.body)
+//       res.send("error occurred")
+//     }else {
+//       console.log(result)
+//       res.send('successfully posted data')
+//     }
+//   })
+// })
